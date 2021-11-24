@@ -1,0 +1,117 @@
+/* card  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+.container-prev-ride {
+    margin-left: 100px;
+    max-width: 1300px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+   
+}
+
+.container-prev-ride .box {
+    width: calc(27% - 10px);
+    background: rgb(238, 239, 241);
+    border: 1px solid rgb(190, 229, 236) ;
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 5px ;
+   
+}
+
+.box .quote i {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #0da0c5
+}
+
+
+
+.box p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.box .name_job {
+    margin: 10px 0 3px 0;
+    color: #0f0e0f;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rating i {
+    font-size: 18px;
+    color: #082e66;
+    margin-bottom: 5px;
+}
+
+.btns {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button {
+    background: #3595bb;
+    width: 100%;
+    padding: 0px 0px;
+    outline: none;
+    border: 1px solid #0d83a0;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 18px;
+   
+    font-weight: 300;
+    width: 200px;
+
+    height: 40px;
+    color: #0e090f;
+    transition: all 0.3s linear;
+}
+
+/* .btns button:first-child {
+    background: none;
+    margin-right: 5px;
+} */
+
+.btns button:last-child {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btns button:first-child:hover {
+    background: #254e99;
+    color: rgb(241, 238, 238);
+}
+
+.btns button:hover {
+    color: #fff;
+}
+
+@media (max-width:1045px) {
+    .container-prev-ride .box {
+        width: calc(40% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:710px) {
+    .container-prev-ride .box {
+        width: 100%;
+    }
+}

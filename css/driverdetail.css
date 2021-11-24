@@ -1,0 +1,109 @@
+/* card  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+   
+   
+.container-driver-detail {
+    margin-left: 100px;
+    max-width: 1300px;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container-driver-detail .box-1 {
+    width: calc(27% - 10px);
+    background: rgb(226, 241, 231);
+    display: inline-flex;
+    border: 2px solid rgb(80, 202, 202);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+
+.container-driver-detail .box-1 .driver-image {
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+   
+    padding: 0px;
+    border-radius: 50%;
+}
+
+.box-1 .driver-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(38, 127, 168);
+}
+
+.box-1 p {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.box-1 .name_drive {
+    margin: 10px 0 3px 0;
+ 
+    font-size: 30px;
+    font-weight: 500;
+}
+.fa{
+    font-size: 22px;
+    margin-left: 10px 10px 10px 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn button {
+    background: #54a1c0;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #7bbbd4;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+ 
+    transition: all 0.3s linear;
+}
+
+
+.btn button:last-child {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btn button:first-child:hover {
+    background: #70c5be;
+    color: rgb(241, 238, 238);
+}
+
+
+@media (max-width:1045px) {
+    .container-driver-detail .box-1 {
+        width: calc(40% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:710px) {
+    .container-driver-detail .box-1 {
+        width: 100%;
+    }
+}

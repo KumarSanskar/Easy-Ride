@@ -1,0 +1,49 @@
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 500;
+    text-decoration: uppercase;
+}
+.heading h1{
+    font-size: 2rem;
+}
+.ride-container{
+   
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap:1rem;
+    margin-top: 2rem;
+}
+.ride-container .box{
+    text-align: center;
+    background-color: rgb(156, 166, 187);
+    padding: 60px;
+    margin-left: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.ride-container .box .bx{
+    font-size: 34px;
+    padding: 10px;
+    background-color: rgb(238, 164, 68);
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+.ride-container .box .bx{
+    font-size: 34px;
+    padding: 10px;
+    background: white;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+.ride-container .box h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+}
+.ride-container .box .bx:hover, .ride-container .bx .bxs-calendar{
+    background:var(--gradient) ;
+    color: rgb(146, 7, 7);
+}
