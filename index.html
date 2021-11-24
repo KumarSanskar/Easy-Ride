@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyRide</title>
+  <script src="https://kit.fontawesome.com/8e517d223f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/ride.css">
+  <link rel="stylesheet" href="./css/servicde.css">
+  <link rel="stylesheet" href="./css/review.css">
+
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/mansifooter.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script src="https://kit.fontawesome.com/8e517d223f.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      scroll-padding-top: 2rem;
+      scroll-behavior: none;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      position: absolute;
+      bottom: 4rem;
+      left: 100px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 0.5rem;
+
+    }
+
+    .input-box {
+      flex: 1 1 7rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-box span {
+      font-weight: 500;
+    }
+
+    .input-box input {
+      padding: 7px;
+      outline: none;
+      border: none;
+      background: #eeeff1;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .form-container form .btn {
+      flex: 1 1 7rem;
+      padding: 10px 34px;
+      border: none;
+      border-radius: 0.5rem;
+      background: #2d36b8;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+
+    }
+
+    .form-container form .btn:hover {
+      background: orange;
+    }
+
+    :root {
+      --main-cololr: #fe5b3d;
+      --second-color: #ffac38;
+      --text-color: #444;
+      --gradient: linear-gradient(#fe5b3d, #ffac38);
+    }
+
+    .ride-container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+      gap: 1 rem;
+      margin-top: 2 rem;
+    }
+
+    html::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    html::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background: var(--main-color);
+      border-radius: 5rem;
+    }
+
+    section {
+      padding: 50px 100px;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #b1b4b9;
+      padding: 15px 100px;
+
+    }
+
+    .ride-container .box {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(195, 206, 98);
+    }
+
+    .ride-container .box .fas {
+      font-size: 34px;
+      padding: 10px;
+      background: #eeeff1;
+      border-radius: 0.5rem;
+      color: orange;
+    }
+
+    .ride-container .box .far {
+      font-size: 34px;
+      padding: 10px;
+      background: #eeeff1;
+      border-radius: 0.5rem;
+      color: orange;
+    }
+
+    .ride-container .box h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 1.4rem 0 0.5rem;
+    }
+
+    .ride-container .box .fas:hover,
+    .ride-container .fas {
+      background: orangered;
+      color: #fff;
+    }
+
+    .ride-container .box .far:hover,
+    .ride-container .far {
+      background: orangered;
+      color: #fff;
+    }
+
+    .heading {
+      text-align: center;
+    }
+
+    .heading span {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .heading h1 {
+      font-size: 2rem;
+
+    }
+
+    .home {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      background: url(./images/car10.jpg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: cover;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text h1 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+
+    .text span {
+      color: var(--main-color);
+    }
+
+    .text p {
+      margin: 00.5rem 0 1rem;
+    }
+
+    .app-stores {
+      display: flex;
+    }
+
+    .app-stores img {
+      width: 100px;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    .logo img {
+      height: 8vh;
+      width: 40px;
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a {
+      font-size: 1rem;
+      padding: 10px 20px;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .navbar a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background: var(--gradient);
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      transition: 0.5s;
+    }
+
+    .header-btn .sign-up {
+      background: #3a7dca;
+      color: #FFF;
+      border-radius: 0.5rem;
+    }
+
+    .header-btn .sign-up:hover {
+      background: orange;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
+    #menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 10001;
+      display: none;
+    }
+
+    .header-btn a {
+      padding: 10px 20px;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .header-btn .sign-in {
+      background: #39a318;
+      color: #FFF;
+      border-radius: 0.5rem;
+    }
+
+    .header-btn .sign-in:hover {
+      background: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar made by Mansi Katiyar -->
+  <header>
+    <h3 style="margin-left: -70px;">EASY RIDE</h3>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#ride">Ride</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="./pages/terms&Condition.html">Terms and Conditions</a></li>
+    </ul>
+    <div class="header-btn">
+      <a href="./pages/login&signup.html" class="sign-up">Sign Up</a>
+      <a href="./pages/login&signup.html" class="sign-in">Sign In</a>
+    </div>
+  </header>
+  <section class="home" id="home"
+    style="background-image: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); width: 1520px;margin-left: 10px;">
+    <div class="text" style="color: wheat;">
+      <h1><span>WELCOME TO <br><br> EASY RIDE</span></h1>
+      <p style="font-size: 20px;"><br>LOOKING TO RENT A CAR <br>Book a City Taxi to your destination in town
+        <br>Choose from a range of categories and prices
+      </p>
+      <div class="header-btn">
+        <a href="./pages/login&signup.html" class="sign-up" style="background-color: red;margin-left: 100px;">Book Now</a>
+      </div>
+    </div>
+    <div class="form-container">
+      <form action="">
+        <div class="input-box">
+          <span>Location</span>
+          <input type="search" name="" id="" placeholder="Search Places">
+        </div>
+        <div class="input-box">
+          <span>Pick-Up Date</span>
+          <input type="date" name="" id="">
+        </div>
+        <div class="input-box">
+          <span>Return Date</span>
+          <input type="date" name="" id="">
+        </div>
+        <input type="submit" name="" id="" class="btn">
+      </form>
+    </div>
+  </section>
+  <hr width="100%" size="7%" color="green" style="margin-top: 30px;" />
+  <section class="ride" id="ride">
+    <div class="heading">
+      <span style="font-size: 30px;">How Its Work</span>
+      <h1 style="margin-top: 20px;">Rent With 3 Easy steps</h1>
+    </div>
+    <div class="ride-container">
+      <div class="box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h2>Choose a Location</h2>
+        <p> choosing a location is not something that can be done on a whim it is a crucial step before starting a
+          trip.A trip is incomplete without specifying the<br> location</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-calendar-alt"></i>
+        <h2>Pick-Up Date</h2>
+        <p>Pick up date can be defined as the date on which you want to start your journey towards your destination.a
+          well planned day on a planned date will make your trip a life time memory for you</p>
+      </div>
+      <div class="box">
+        <i class="far fa-calendar-check"></i>
+        <h2>Book A Car</h2>
+        <p>Return date means the date on which insured is scheduled to return to the point where trip started or to a
+          different specified return destination.this date is specified in travel document</p>
+      </div>
+    </div>
+  </section>
+
+  <hr width="100%" size="7%" color="green" />
+
+  <!-- best services made my Goldi Maurya -->
+  <section style="margin-top: -10px;">
+    <div class="service" id="services" style=" text-align: center;font-size: 2rem;font-weight: 500;
+    text-decoration: uppercase;font-size: 2rem;">
+      <div>
+        <span style="font-size: 40px;">
+          Best Services
+        </span>
+        <h1 style="font-size: 40px; margin-top: 10px;">Explore Our Top Deals<br> From Top Rate Dealers</h1>
+      </div>
+      <div class="services-container">
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+          <p>2017</p>
+          <h3 style=" margin-bottom: 20px;">$58500 | $235 <span>/month</span></h3>
+          <a href="./pages/pageUnderProgress.html" class="btn">Rent Now</a>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+          <p>2017</p>
+          <h3 style=" margin-bottom: 20px;">$58500 | $235 <span>/month</span></h3>
+          <a href="./pages/pageUnderProgress.html" class="btn">Rent Now</a>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+          <p>2017</p>
+          <h3 style=" margin-bottom: 20px;">$58500 | $235 <span>/month</span></h3>
+          <a href="./pages/pageUnderProgress.html" class="btn">Rent Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about us made by Goldi Maurya -->
+  <hr width="100%" size="5%" color="grey" />
+  <section class="abtcnt" id="about">
+    <h1 style="text-align: center;font-size: 45px;margin-bottom: 30px;">About Us</h1>
+    <div class="abtsec">
+      <div class="inner-container">
+        <h1>About Us</h1>
+        <p class="textabt">
+          EasyRide offers different levels of service, ranging from economic to luxury travel. The cabs are reserved
+          through a this platform e and the service accepts both cash and online payments. It
+          claims to clock an average of more than 150,000 bookings per day and commands 60% of the market share in India
+          as of 2012 As of 1998, the company has expanded to a network of more than 1.5 million drivers across 250
+          cities.
+          In 2021, EasyRide launched its new and pre-owned car marketplace called EasyRide Cars in 30 cities. 
+          
+        </p>
+        <div class="skillsabt">
+          <span>Rentals</span>
+          <span>24x7 Support</span>
+          <span>We value our customers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr width="100%" size="5%" color="grey" />
+  <!-- testimonials made by Kumar Sanskar -->
+  <section id="testimonials">
+    <div class="testimonial-heading">
+      <span>Our Services Speaks</span>
+      <h1>Happy Customers ,Happy We!!</h1>
+    </div>
+    <div class="testimonial-box-container">
+      <div class="testimonial-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+            </div>
+            <div class="name-user">
+              <strong>Touseeq Ijaz</strong>
+              <span>@touseeqijazweb</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="far fa-star" style="color: #ffac38;"></i>
+          </div>
+        </div>
+        <div class="client-comment">
+          <p>
+            I am very happy during pune - mahableshwar trip, very good driver and car
+            car was very good and driver was good cost of travel in budget overall very good I will use again and again
+            .
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img
+                src="https://media.istockphoto.com/photos/learn-to-love-yourself-first-picture-id1291208214?b=1&k=20&m=1291208214&s=170667a&w=0&h=sAq9SonSuefj3d4WKy4KzJvUiLERXge9VgZO-oqKUOo=" />
+            </div>
+            <div class="name-user">
+              <strong>J.K Rowling</strong>
+              <span>@jkrowling</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+          </div>
+        </div>
+        <div class="client-comment">
+          <p>
+            We had a great experience with EasyRide! There was only one car remaining in the class of vehicle we
+            reserved, which ended up having a safety recall. We were promptly upgraded and sent on our way.
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+            </div>
+            <div class="name-user">
+              <strong>Harry Saini</strong>
+              <span>@DanielRedclief</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="far fa-star" style="color: #ffac38;"></i>
+          </div>
+        </div>
+        <div class="client-comment">
+          <p>
+            We always use the Reliable EasyRide Car Rental As The price is lower than any of their competitors. The cabs
+            are always clean. They are spacious enough for our household, which is a family of 6.
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <div class="box-top">
+          <div class="profile">
+            <div class="profile-img">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+            </div>
+            <div class="name-user">
+              <strong>Oliva</strong>
+              <span>@Olivaadward</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <i class="fas fa-star" style="color: #ffac38;"></i>
+            <i class="fas fa-star"style="color: #ffac38;"></i>
+            <i class="fas fa-star"style="color: #ffac38;"></i>
+            <i class="fas fa-star"style="color: #ffac38;"></i>
+            <i class="far fa-star"style="color: #ffac38;"></i>
+          </div>
+        </div>
+        <div class="client-comment">
+          <p>
+            I had booked a car from Mumbai to Lonavala trip from Reliable Car the price is really affordable and good
+            had really nice and friendly service. The driver was very helpful and polite, the car was clean and worked
+            fine .
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer made by Mansi Katiyar -->
+
+  <footer>
+    <section class="sec-1">
+      <section class="about">
+        <h2>About EasyRide</h2>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Contact us</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Mobile Version</a></li>
+          <li><a href="./pages/pageUnderProgress.html">EasyRide on Mobile</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Sitemap</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Offers</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Careers</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Values</a></li>
+        </ul>
+      </section>
+      <section class="link1">
+        <h2>Info</h2>
+        <ul>
+          <li><a href="./pages/terms&Condition.html">T&C</a></li>
+          <li><a href="./pages/terms&Condition.html">Privacy Policy</a></li>
+          <li><a href="./pages/terms&Condition.html">FAQ</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Blog</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Bus Operator Registration</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Agent Registration</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Insurance Partner</a></li>
+          <li><a href="./pages/pageUnderProgress.html">User Agreement</a></li>
+
+        </ul>
+      </section>
+      <section class="link2">
+        <h2>Global Sites</h2>
+        <ul>
+          <li><a href="./pages/pageUnderProgress.html">India</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Singapore</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Malaysia</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Indonesia</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Peru</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Colombia</a></li>
+        </ul>
+      </section>
+      <section class="link3">
+        <h2>Our Partners</h2>
+        <ul>
+          <li><a href="./pages/pageUnderProgress.html">Goibibo</a></li>
+          <li><a href="./pages/pageUnderProgress.html">Makemytrip</a></li>
+        </ul>
+      </section>
+      <section class="link4">
+        <ul>
+          <li><i class="fas fa-car"></i></li>
+        </ul>
+        <p>
+          <span>
+            EasyRide is the world largest online<br>
+            car booking service trusted by over 20000<br>
+            happy customer globally.EasyRide offers car<br>
+            booking through its website.
+            <br>
+            <ul style="display: inline-flex; margin-top: 5px; font-size: 20px;">
+              <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://google.com"><i class="fab fa-google"></i></a></li>
+            </ul>
+          </span>
+        <p style="margin-top: 12px; margin-right: 2px; color: gray;">
+          @ 2021 EasyRide All rights reserved
+        </p>
+        </p>
+      </section>
+    </section>
+  </footer>
+
+</body>
+
+</html>
