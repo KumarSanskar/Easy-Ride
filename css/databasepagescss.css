@@ -1,0 +1,33 @@
+body {
+    background-image: linear-gradient(rgb(250, 253, 253), rgb(161, 210, 231), rgb(29, 89, 158));
+}
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 100px;
+    /* border: 2px solid red; */
+    font-family: arial;
+    font-size: 18px;
+    background-image: linear-gradient(rgb(176, 213, 228),rgb(237, 245, 245),rgb(237, 245, 245), rgb(212, 224, 238),rgb(243, 250, 250),rgb(237, 245, 245),rgb(66, 140, 170));
+    border-radius: 20px;
+}
+h2 {
+    text-align: center;
+}
+.container div {
+    text-align: center;
+}
+input {
+    width: 250px;
+    padding: 5px;
+}
+button {
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: rgb(17, 61, 182);
+    border: none;
+    color: rgb(200, 231, 236);
+    border-radius: 10px;
+}
